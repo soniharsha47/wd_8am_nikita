@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - to get input from user</title>
+</head>
+<body>
+        <h1>Form element example</h1>
+        <!-- 
+                name -> to indentify the form which u want to fetch
+                action -> backend calling   
+                onsubmit -> JS calling
+                method  -> GET(insecure) / POST(secure)
+        -->
+
+        <form name="" action="" onsubmit="" method="">
+            <label>User Name : </label>
+            <input />
+            <!-- 
+                type    -> which type of data u want to insert/get
+                name    -> identity -> when you want to fetch data/field in backend u can fetch via name
+                id      -> identity -> when you want to fetch data/field in JS u can fetch via name
+                value   -> default value
+                placeholder -> as watermark
+                required    -> compulsory 
+                readonly    -> u cant insert data but this data will store in db
+                disable     -> u cant insert data but this data will not store in db
+                min     -> minimum value
+                max     -> maximum value
+                minlength   -> minimum character/data
+                maxlength   -> maximum character/data
+             -->
+
+             <input type="text" />
+             <input type="email" />
+             <input type="url" />
+             <input type="search" />
+             <input type="tel" maxlength="10"  minlength="10"/>
+             <input type="number" min="5" max="15" />
+             <input type="password" />
+             <br/><br/>
+             <input type="month" />
+             <input type="week" />
+             <input type="date" />
+             <input type="time" />
+             <input type="datetime-local" />
+             <br/><br/>
+             <input type="file" />
+             <!-- <input type="image" /> -->
+             <input type="color" />
+             <input type="range" />
+             <br/><br/>
+             <textarea rows="10" cols="50"></textarea>
+             <select>
+                <option>Surat</option>
+                <option>Ahmedabad</option>
+             </select>
+             <label>Gender</label>
+             <input type="radio" name="gender" /> Male
+             <input type="radio" name="gender" /> Female
+             <label>Hobbies</label>
+             <input type="checkbox" name="hobbies" /> Reading
+             <input type="checkbox" name="hobbies" /> Writing
+             <br/><br/>
+             <input type="submit" />
+             <input type="reset" />
+        </form>
+</body>
+</html>

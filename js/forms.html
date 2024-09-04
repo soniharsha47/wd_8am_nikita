@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        #uerr{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <form name="registration" onsubmit="return valid()" >
+        <label>User name : </label>
+        <input type="text" name="" id="uname">
+        <span id="uerr"></span>
+
+        <label >Password : </label>
+        <input type="password" name="" id="">
+        <div id="paser"></div>
+        <input type="submit" value="send">
+    </form>
+
+    <script>
+
+        function valid(){
+
+            let uname = document.forms['registration']['uname'].value;
+
+            // console.log(uname)
+            if(uname==''){
+                document.getElementById('uerr').innerHTML='Please enter your user name '
+                return false;
+            }
+            else if(uname.length<=1){
+                document.getElementById('uerr').innerHTML='User name is too short !! ';
+                return false;
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+var st = '  Grras Solution Pvt. Ltd.    ';
+
+console.log(st)
+console.log(st.toUpperCase());
+console.log(st.toLowerCase())
+console.log(st.replace('r','i'))
+console.log(st.replaceAll('r','i'))
+console.log(st.split(' '))
+console.log(st.length)
+console.log(st.charCodeAt(3))
+console.log(st.charAt(3))
+console.log(st.substring(0,5))
+console.log(st.slice(0,5))
+console.log(st.trim())
+console.log(st.padStart(35,"@"))
+console.log(st.padEnd(50,"%"))
+console.log(st.startsWith('a',9))
+console.log(st.lastIndexOf('S',10))
+console.log(st.localeCompare('Grras','escfdsgrras'))
+console.log(st)

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+
+        /* 
+            vh -> view height
+            vw -> view width
+            rem -> fix format  1rem = 16px
+        */
+        /* bydefault design big device */
+        .box{
+            height: 10vh;
+            width: 100vw;
+            background-color: brown;
+            overflow: auto;
+        }
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .carts{
+            height: 20rem;
+            width: 20rem;
+            margin: 0.5%;
+            background-color: gray;
+        }
+        body{
+            background-color: rgb(86, 49, 49);
+        }
+        /* tablet -> max-pixel - 787-1300px */
+        @media (max-width:1300px){
+            body{
+                background-color: rgb(21, 72, 64);
+            }
+        }
+        /* Mobiles -> max-pixel - 0-787px */
+        @media (max-width:787px){
+            body{
+                background-color: pink;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro amet a ullam nobis, ab esse sed suscipit illum assumenda dignissimos iure qui quaerat reprehenderit aliquam ex alias. Officiis nisi aliquid debitis hic, corporis laboriosam quis rem quod tempora at ad. Sit dicta vel eveniet doloribus. Debitis aut assumenda cum incidunt amet enim dolore voluptatibus, quia esse voluptates vel! Nihil odit in rerum fuga error consequuntur quisquam ipsa voluptates omnis cumque at, repellendus eos dolorum vitae totam necessitatibus praesentium. Minima placeat sint officia repudiandae impedit dignissimos fugiat obcaecati earum iste laudantium, sapiente soluta, excepturi, facilis quis est! Maiores, blanditiis ab!</div>
+    <div class="products">
+        <div class="carts">
+            <!-- if u want to add size of data u have to use % -->
+        </div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+
+    </div>
+</body>
+</html>

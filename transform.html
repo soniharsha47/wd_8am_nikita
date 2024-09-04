@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .rotate{
+            height: 200px;
+            width: 200px;
+            margin: 5%;
+            border: 3px solid black;
+            border-radius: 100%;
+            transition-duration: 5s;
+            border: 5px solid gray;
+            border-top: 5px solid red;
+        
+        }
+        .rotate:hover{
+            transform: rotate(36000deg);
+        }
+
+        .skew{
+            height: 200px;
+            width: 200px;
+            margin: 5%;
+            border: 5px solid saddlebrown;
+            /* transform: skew(5deg,10deg); */
+            transform: skewX(10deg);
+            transform: skewY(10deg);
+
+            box-shadow: 5px 5px 100px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">Rotate</div>
+    <div class="skew">Skew</div>
+</body>
+</html>

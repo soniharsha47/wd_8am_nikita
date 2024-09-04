@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    
+
+    <script>
+        // RegEx
+        let st = "grrassolution2014@gmail.com"
+
+        document.write(st.match('r') + '<br/>');
+
+        document.write(st.search('@') + '<br/>')
+
+        document.write(st.search('@')+1 + '<br/>')
+
+        document.write(st[st.search('@')+1] + '<br/>')
+        document.write(st[st.search('@')-1] + '<br/>')
+
+        if(st[st.search('@')-1]==undefined || st[st.search('@')+1]==undefined){
+            document.write('Invalid Email')
+        }
+        else{
+            document.write('Valid Email')
+        }
+        document.write('</br>')
+        document.write(st.match(/[0-9@-Za-z]/g) + '<br/>');
+
+    </script>
+</body>
+</html>

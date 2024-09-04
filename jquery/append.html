@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>append</title>
+    <style>
+        #para{
+            background-color: green;
+            position: absolute;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="hide">Click to start animation</button>
+   
+    <div id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus consectetur ipsum necessitatibus autem quaerat. Iure consequuntur sunt dolores quo fuga obcaecati, labore quam odio vel dolore voluptas ducimus, dolorem in laborum qui est a ipsum. Suscipit magnam neque consectetur corporis veritatis expedita officiis earum non quos impedit est, illum quisquam, dignissimos, saepe ab nisi esse temporibus animi amet? Ea magni minima, ipsum in exercitationem vitae excepturi assumenda, explicabo earum sit perferendis odio ad velit cupiditate sunt hic ullam iusto at tempora, itaque deleniti quia perspiciatis. Deleniti saepe neque consequuntur perferendis dolor velit, cupiditate quas eum consectetur sapiente laudantium hic at distinctio nihil ipsum quaerat facere veniam quibusdam, sint eveniet nobis voluptatem? Quo, facere adipisci. Necessitatibus cum facere quidem, et iste tempora dolores delectus suscipit explicabo impedit. Beatae optio aperiam, id enim dignissimos reiciendis perspiciatis modi eos, earum unde doloremque deleniti, quo reprehenderit nobis. Perferendis vel commodi animi repellendus excepturi at, reprehenderit, dolores laudantium quas officia, fugit numquam aspernatur sapiente tempora sint corporis nisi! Praesentium vero error voluptate magni quia perspiciatis facilis dolorum inventore odit cum quam quibusdam ad velit corporis dolor, delectus, necessitatibus enim illo obcaecati consequatur, dignissimos eaque ipsam officiis? Ex expedita debitis ab, eius autem officia asperiores.</div>
+    
+
+    <script>
+
+        $(document).ready(()=>{
+
+
+            $('#hide').click(()=>{
+                $('#para').append('<li>Hello</li>')
+            })
+
+        })
+
+    </script>
+</body>
+</html>
